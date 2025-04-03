@@ -31,7 +31,7 @@ export class Order {
               if (["small", "medium", "large"].includes(sInput.toLowerCase())) {
                   this.orderDetails.size = sInput;
                   this.stateCur = this.OrderState.SELECTING_TOPPINGS;
-                  aReturn.push("Any toppings? (Cheese, Bacon, Mushrooms) Type 'none' if no toppings.");
+                  aReturn.push("Any toppings? (Cheese, Olives, Mushrooms) Type 'none' if no toppings.");
               } else {
                   aReturn.push("Please choose Small, Medium, or Large.");
               }
